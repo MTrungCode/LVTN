@@ -1,0 +1,27 @@
+<script>
+export default {
+
+}
+</script>
+
+<template>
+  <!DOCTYPE html>
+  <html lang="en">
+      <head>
+        <title>How to store image path in MySQL database using Node js - Tutsmake.com</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+      </head>
+      <body>
+        <h1>How to store image path in MySQL database using Node js - Tutsmake.com</h1>
+        <form action="/" enctype="multipart/form-data" method="post">
+          <input type="file" name="image" accept='image/*' >
+          <input type="submit" value="Upload">
+        </form>  
+      </body>
+  </html>
+</template>
+
+<style>
+
+</style>

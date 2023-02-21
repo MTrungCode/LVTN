@@ -5,8 +5,7 @@ const router = express.Router();
 
 router.route("/")
     .get(products.findAll)
-    .post(products.create)
-    .delete(products.delete);
+    .post(products.create);
 
 router.route("/favorite")
     .get(products.findAllFavorite);

@@ -1,5 +1,8 @@
 const express = require("express");
 const cors = require("cors");
+const bodyparser = require("body-parser");
+const multer = require("multer");
+const path = require("path");
 const productRouter = require("./app/routes/product.route");
 const ApiError = require("./app/api-error");
 
@@ -10,6 +13,25 @@ app.use(express.json());
 
 app.get("/", (req, res) => {
     res.json({ message: "Welcom to my website." });
+});
+
+app.use(express.static("./public"));
+app.use(bodyparser.json());
+app.use(bodyparser.urlencoded({
+    extended: true
+}));
+
+var storage = multer.diskStorage({
+    destination: (req, file, callBack) => {
+        callBack(null, "./public/images/")
+    },
+    filename: (req, file, callBack) => {
+        callBack(null, file.fieldname + '-' + Date.now() + path.extname(file.originalname))
+    }
+})
+
+var upload = multer({
+    storage: storage
 });
 
 app.use("/api/products", productRouter);
