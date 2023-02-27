@@ -1,6 +1,6 @@
 const app = require("./app");
 const config = require("./app/config");
-const database = require("./database");
+
 
 function startServer() {
     try {
