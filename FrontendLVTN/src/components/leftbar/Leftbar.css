@@ -1,0 +1,33 @@
+.leftbar{
+    flex: 2;
+    margin-left: 15px;
+    height: calc(100vh - 70px);
+    border: none;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.83); 
+    box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.83);
+    background-color: white;   
+}
+
+.leftbarWrapper{
+    margin: 20px;
+    font-size: 16px;
+}
+
+.leftbarList{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.leftbarListItem{
+    display: flex;
+    align-items: flex-start;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.leftbarIcon{
+    align-items: end;    
+    margin-right: auto;
+}

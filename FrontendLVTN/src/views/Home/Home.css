@@ -1,0 +1,109 @@
+.homeContainer {
+    display: flex;
+    width: 100%;
+}
+
+.homePage{
+    background-color: rgb(245, 242, 242);
+}
+
+.product_category{    
+    background-color: rgb(133, 118, 99);
+}
+
+.categoryHot{
+    padding: 20px 5px;
+    margin: 0 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.caption{
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 20px;
+    color: rgb(223, 123, 52);
+}
+
+.caption1{
+    font-size: 24px;
+    font-weight: bold;
+    margin: 70px 0 20px;
+    color: rgb(231, 206, 59);
+}
+
+.captionHr{
+    margin: 20px 0;
+    border: 1px solid rgb(212, 212, 212);
+}
+
+.homeProduct{  
+    margin: 0 20px;
+}
+
+.homeProductItem{
+    padding: 25px;
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+    background-color: white;
+    width: 190px;
+    height: 265px;
+}
+
+.productHigh{
+    margin: 0 20px;
+}
+
+.topbarMenu{
+    width: 100%;
+    display: flex;
+}
+
+.topbarMenuLeft{
+    flex: 2;
+    margin: 15px;
+    padding-left: 30px;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    color: chocolate;    
+}
+
+.categoryIcon{
+    margin-right: 7px;
+}
+
+.topbarMenuRight{
+    flex: 8;
+    display: flex;
+}
+
+.topbarMenuRightItem{
+    margin: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.topbarIcon{
+    font-size: 20px !important;
+    margin-right: 5px;
+    margin-top: 2px;
+}
+
+.buttonMore{    
+    margin-left: 90vh;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 14px;
+    color: rgb(67, 70, 219);
+    cursor: pointer;
+}
+
+.buttonMore:hover{
+    color: white;
+    background-color: rgb(67, 70, 219);
+}

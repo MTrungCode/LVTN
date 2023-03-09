@@ -1,0 +1,123 @@
+.footerContainer{
+    background-color: rgb(133, 118, 99);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 600px;
+    width: 100%;
+}
+
+.footerTop{
+    margin-top: 70px;
+    padding: 50px 0;
+    background-color: coral;
+}
+
+.footerCenter{
+    margin: 0 20px 15px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: -30px;
+}
+
+.footerItem1{
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 30px;
+}
+
+.footerItem2{
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 30px;
+    
+}
+
+.footerItem3{
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 30px;
+}
+
+.footerItem4{
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 30px;
+}
+
+.footerTitle{
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 20px;
+    color: darkblue;
+}
+
+.footerContent{
+    font-size: 14px;
+    color: whitesmoke;
+}
+
+.footerCopyright{
+    display: flex;
+    margin-top: -40px;
+    margin-bottom: -10px;
+}
+
+.copyrightContent{
+    margin-left: 50vh;
+    font-size: 13px;
+    color: whitesmoke;
+}
+
+.footerLink{
+    font-size: 13px;
+    color: whitesmoke;
+}
+
+.footerHr{
+    border: 0cap solid rgb(253, 220, 128);
+}
+
+.footerList{
+    margin: 0;
+    padding: 0;
+    color: whitesmoke;
+    margin-left: 10px;
+}
+
+.footerListItem{
+    margin: 10px 7px 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.footerListItem:hover{
+    color: darkblue;
+}
+
+.footerIcon{
+    margin-right: 7px;
+    font-size: 20px !important;
+}
+
+.footerContactList{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    color: whitesmoke;
+}
+
+.footerContact{
+    margin: 10px 0 10px;
+    font-size: 14px;
+    display: flex;
+    cursor: pointer;
+}
