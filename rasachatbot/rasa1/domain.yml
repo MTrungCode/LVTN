@@ -1,0 +1,87 @@
+version: "3.1"
+
+intents:  
+  - greet
+  - introduce
+  - order
+  - information
+  - history
+  - price
+  - goodbye
+  - affirm
+  - deny
+  - chatting
+  - mood_unhappy
+  - bot_challenge
+
+entities:
+  - user_name
+  - product_name
+
+slots:
+  name:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: user_name
+  productname:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: product_name
+
+actions:
+  - action_product_price
+
+responses:   
+
+  utter_ask_introduce:
+  - text: "Xin chào, {name}"
+
+  utter_greet:
+  - text: "Xin chào bạn!\nTôi là AI chatbot của ExportGoods. Tôi có thể gọi bạn là gì?"
+
+  utter_help:
+  - text: "Hôm nay tôi có thể giúp gì cho bạn?"
+
+  utter_order:
+  - text: "Để đặt hàng, vui lòng thực hiện các bước sau đây:\nĐầu tiên, chọn sản phẩm bạn muốn.\nSau đó nhấn nút thêm vào giỏ hàng.\nKế tiếp, bạn có thể tiếp tục chọn sản phẩm khác hoặc vào giỏ hàng để xem các sản phẩm vừa chọn.\nCuối cùng là bấm thanh toán và điền các mục xuất hiện sau đó và nhấn nút xác nhận."
+
+  utter_information:
+  - text: "Website ExportGoods chuyên bán các sản phẩm nhập khẩu từ nước ngoài.\nWebsite có nhiều loại sản phẩm khác nhau với đa dạng các thương hiệu, đảm bảo chất lượng tốt nhất và giá cả phù hợp.\nBạn có thể xem menu danh mục sản phẩm ở trang chủ để biết thêm chi tiết."
+
+  utter_history:
+  - text: "Để xem lịch sử đặt hàng, trước tiên bạn phải có tài khoản trước khi đặt hàng.\nSau khi bạn đăng nhập tài khoản, nhấn vào avatar ở góc trên bên phải website để chuyển đến trang cá nhân.\nTại đây bạn sẽ có mục lịch sử đặt hàng, bạn có thêm xem các đơn hàng đã đặt hoặc có thể hủy nếu đơn hàng chưa quá hạn"
+  
+  utter_did_that_help:
+  - text: "Những thông tin này có giúp ích gì cho bạn không?"
+
+  utter_happy:
+  - text: "Tuyệt vời, tiếp tục nào!"
+
+  utter_un_happy:
+  - text: "Tôi rất tiếc về điều đó!"
+
+  utter_cheer_up:
+  - text: "Hi vọng tấm ảnh này giúp bạn vui lên một chút"
+    image: https://i.imgur.com/nGF1K8f.jpg
+
+  utter_did_that_happy:
+  - text: "Điều này có giúp được bạn không?"
+
+  utter_help_continue:
+  - text: "Bạn còn muốn giúp gì không?"
+
+  utter_private:
+  - text: "Tôi được tạo ra bởi người lập trình website này, Nguyễn Minh Trung.\nNgười này trong tương lai sẽ trở nên nổi tiếng hãy nhớ kỹ cái tên này"  
+
+  utter_goodbye:
+  - text: "Bye!"
+  - text: "Hẹn gặp lại sau."
+
+  utter_iamabot:
+  - text: "Tôi là một bot, được hỗ trợ bởi Rasa."  
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

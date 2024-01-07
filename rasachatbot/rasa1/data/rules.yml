@@ -1,0 +1,76 @@
+version: "3.1"
+
+rules:
+    
+- rule: ask name
+  steps:
+    - intent: introduce
+    - action: utter_ask_introduce
+    - action: utter_help
+
+- rule: greet user
+  steps:
+    - intent: greet
+    - action: utter_greet
+
+- rule: order user
+  steps:
+    - intent: order
+    - action: utter_order
+    - action: utter_help_continue
+
+- rule: information user
+  steps:
+    - intent: information
+    - action: utter_information
+    - action: utter_help_continue
+
+- rule: history user
+  steps:
+    - intent: history
+    - action: utter_history
+    - action: utter_help_continue
+
+- rule: price user
+  steps:
+    - intent: price
+    - action: action_product_price
+    # - action: utter_help_continue
+
+- rule: did help user
+  steps:
+    - intent: deny
+    - action: utter_did_that_help
+
+- rule: happy
+  steps:
+    - intent: affirm
+    - action: utter_happy
+
+# - rule: thank
+#   steps:
+#     - intent: thanks
+#     - action: utter_happy
+
+- rule: unhappy
+  steps:
+    - intent: mood_unhappy
+    - action: utter_un_happy
+    - action: utter_cheer_up
+    - action: utter_did_that_happy
+
+- rule: chatter user
+  steps:
+    - intent: chatting
+    - action: utter_private
+    - action: utter_did_that_help
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot

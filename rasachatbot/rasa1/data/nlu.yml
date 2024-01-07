@@ -1,0 +1,118 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - Xin chào
+    - hi
+    - Chào buổi sáng
+    - Chào buổi trưa
+    - Chào buổi chiều
+    - chào buổi tối
+    - Chào
+
+- intent: introduce
+  examples: |
+    - Tên tôi là [Trung]{"entity":"user_name"}
+    - Tên tôi là [Tuấn]{"entity":"user_name"}
+    - [Trung]{"entity":"user_name"}
+    - [Tuấn]{"entity":"user_name"}
+    - Gọi tôi là [Trung]{"entity":"user_name"}
+    - Gọi tôi là [Tuấn]{"entity":"user_name"}
+    - Tôi tên là [Trung]{"entity":"user_name"}
+    - Tôi tên là [Tuấn]{"entity":"user_name"}
+
+- intent: order
+  examples: |
+    - Tôi muốn đặt hàng
+    - Chỉ tôi đặt hàng
+    - Đặt hàng như thế nào
+
+- intent: information
+  examples: |
+    - Website này bán gì thế
+    - Sản phẩm của website đến từ đâu
+
+- intent: history
+  examples: |
+    - Xem đơn hàng vừa thanh toán ở đâu
+    - Xem lịch sử đơn hàng như thế nào
+    - Xem lịch sử đơn hàng
+
+- intent: price
+  examples: |
+    - [An Cung Ngưu Hoàng Kwangdong Hàn Quốc Hộp Đen 60 Viên]{"entity":"product_name"} giá bao nhiêu
+    - Giá của [An Cung Ngưu Hoàng Kwangdong Hàn Quốc Hộp Đen 60 Viên] {"entity":"product_name"}
+    - Sản phẩm [An Cung Ngưu Hoàng Kwangdong Hàn Quốc Hộp Đen 60 Viên] {"entity":"product_name"} giá bao nhiêu
+    - [An Cung Ngưu Hoàng Kwangdong Hàn Quốc Hộp Đen 60 Viên]{"entity":"product_name"} nhiêu tiền
+    - [Bọt Rửa Mặt Sáng Mịn, Tươi Mới Làn Da Thalgo Foaming Cleansing Lotion 150ml]{"entity":"product_name"} giá bao nhiêu
+    - Giá của [Bọt Rửa Mặt Sáng Mịn, Tươi Mới Làn Da Thalgo Foaming Cleansing Lotion 150ml] {"entity":"product_name"}
+    - Sản phẩm [Bọt Rửa Mặt Sáng Mịn, Tươi Mới Làn Da Thalgo Foaming Cleansing Lotion 150ml] {"entity":"product_name"} giá bao nhiêu
+    - [Bọt Rửa Mặt Sáng Mịn, Tươi Mới Làn Da Thalgo Foaming Cleansing Lotion 150ml]{"entity":"product_name"} nhiêu tiền
+    - [Bánh Quy Mặt Trời Henry Lambertz Đức Hộp Vuông 13 Vị 1040gr]{"entity":"product_name"} giá bao nhiêu
+    - Giá của [Bánh Quy Mặt Trời Henry Lambertz Đức Hộp Vuông 13 Vị 1040gr] {"entity":"product_name"}
+    - Sản phẩm [Bánh Quy Mặt Trời Henry Lambertz Đức Hộp Vuông 13 Vị 1040gr] {"entity":"product_name"} giá bao nhiêu
+    - [Bánh Quy Mặt Trời Henry Lambertz Đức Hộp Vuông 13 Vị 1040gr]{"entity":"product_name"} nhiêu tiền
+
+- intent: goodbye
+  examples: |
+    - Tạm biệt    
+    - Gặp lại sau
+    - Chúc ngủ ngon
+    - bye
+    - goodbye
+    - Một ngày tốt lành    
+    - bye bye    
+
+- intent: affirm
+  examples: |    
+    - Có
+    - good
+    - Chắc chắn
+    - Đúng rồi
+    - Ừ
+
+- intent: deny
+  examples: |
+    - No
+    - Không
+    - Không có
+    - n
+    - Hết rồi
+    - Hết
+
+- intent: chatting
+  examples: |
+    - Bạn được tạo ra bởi ai?
+    - Ai là người tạo ra bạn?
+
+- intent: mood_unhappy
+  examples: |
+    - Tôi buồn quá
+    - Tệ thiệt
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so sad
+    - so sad
+
+# - intent: thanks
+#   examples: |
+#     - Cảm ơn
+#     - Tôi cảm thấy khá hơn rồi
+#     - Nhờ ơn bạn
+
+- intent: bot_challenge
+  examples: |
+    - Bạn có phải là bot không?
+    - Bạn có phải là con người không?
+    - Tôi đang nói chuyện với bot đúng không?
+    - Tôi đang nói chuyện với con người đúng không?

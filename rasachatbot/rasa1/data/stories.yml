@@ -1,0 +1,116 @@
+version: "3.1"
+
+stories:
+
+- story: info_order
+  steps:  
+  - intent: greet
+  - action: utter_greet
+  - intent: introduce
+  - action: utter_ask_introduce
+  - action: utter_help
+  - intent: order
+  - action: utter_order
+  - action: utter_help_continue  
+  - intent: deny
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: info_history
+  steps:  
+  - intent: greet
+  - action: utter_greet
+  - intent: introduce
+  - action: utter_ask_introduce
+  - action: utter_help
+  - intent: history
+  - action: utter_history
+  - action: utter_help_continue
+  - intent: deny
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: info_product
+  steps:  
+  - intent: greet
+  - action: utter_greet
+  - intent: introduce
+  - action: utter_ask_introduce
+  - action: utter_help
+  - intent: price
+  - action: action_product_price  
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: info_website
+  steps:  
+  - intent: greet
+  - action: utter_greet
+  - intent: introduce
+  - action: utter_ask_introduce
+  - action: utter_help
+  - intent: information
+  - action: utter_information
+  - action: utter_help_continue
+  - intent: deny
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: help path full
+  steps:  
+  - intent: greet
+  - action: utter_greet
+  - intent: introduce
+  - action: utter_ask_introduce
+  - action: utter_help
+  - intent: information
+  - action: utter_information
+  - action: utter_help_continue
+  - intent: order
+  - action: utter_order
+  - action: utter_help_continue
+  - intent: history
+  - action: utter_history
+  - action: utter_help_continue
+  - intent: deny
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  - intent: goodbye
+  - action: utter_goodbye
+
+# - story: sad path 1
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: mood_unhappy
+#   - action: utter_un_happy
+#   - action: utter_cheer_up
+#   - action: utter_did_that_happy
+#   - intent: thanks
+#   - action: utter_happy
+#   - intent: goodbye
+#   - action: utter_goodbye
+
+# - story: sad path 2
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: bot_challenge
+#   - action: utter_iamabot
+#   - intent: chatting
+#   - action: utter_private
+#   - action: utter_did_that_help
+#   - intent: affirm
+#   - action: utter_happy
+#   - intent: goodbye
+#   - action: utter_goodbye
