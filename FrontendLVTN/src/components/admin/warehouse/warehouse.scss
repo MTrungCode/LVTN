@@ -1,0 +1,58 @@
+h1{
+    margin-left: 10px;
+    font-size: 30px;
+    color: blueviolet;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.stocking{
+    color: rgb(20, 138, 20);
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.nearly_sold_out{
+    color: rgb(207, 148, 37);
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.out_of_stock{
+    color: rgb(201, 27, 27);
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.expiry{
+    .notdue{
+        color: rgb(20, 138, 20);
+        font-size: 13px;
+        font-weight: bold;
+    }
+    .shortdue{
+        color: rgb(207, 148, 37);
+        font-size: 13px;
+        font-weight: bold;
+    }
+    .due{
+        color: rgb(168, 10, 10);
+        font-size: 13px;
+        font-weight: bold;
+    }
+}
+
+.toolbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .btn-importPro{
+        margin: 10px 0 10px 10px;                 
+        border: none;
+        border-radius: 5px;
+        padding: 3px;
+        background-color: rgb(67, 192, 94);
+        color: aliceblue;
+    }
+}

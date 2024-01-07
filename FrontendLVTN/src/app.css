@@ -1,0 +1,26 @@
+.scrollToTop{
+    position: fixed;
+	bottom: 6rem;
+	right: 2rem;	
+	align-items: center;
+	justify-content: center;
+	background-color: #79248f;
+	border-radius: 0.5rem;
+	padding: 0.5rem;
+	text-decoration: none;
+	transition: 0.2s ease-out;
+}
+
+.iconScroll{
+    color: #fff;
+	font-size: 3rem;
+	transition: 0.2s ease-out;
+}
+
+.scrollToTop:hover{
+    background-color: #521661;
+}
+
+.scrollToTop:hover .iconScroll{
+    transform: translateY(-4px);
+}

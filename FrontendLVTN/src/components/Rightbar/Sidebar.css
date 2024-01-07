@@ -1,0 +1,15 @@
+.sidebar{
+    flex: 8;
+}
+
+.sidebarCaption{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;    
+    height: 55px;
+    background-color: white;
+}
+
+.sidebarWrapper{
+    padding: 15px 0 15px 15px;
+}

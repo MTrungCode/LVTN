@@ -1,0 +1,124 @@
+.profile{
+    display: flex;
+    justify-content: center;    
+    flex-direction: column;
+    background-color: black;
+
+    .navbar{
+        display: flex;
+        margin: 10px 10px 10px 10px;
+
+        .navigatebar{
+            display: flex;
+            padding: 5px;
+            border: none;
+            border-radius: 5px;
+            background-color: white;
+            width: 150px;        
+    
+            .backtohome{
+                color: rgb(36, 36, 185);
+                font-size: 14px;
+                font-weight: bold;
+                text-decoration: none;
+                outline: none;
+                margin-top: 1px;
+    
+                .iconback{
+                    margin-left: 3px;
+                    font-size: 14px;
+                }
+            }
+            
+            .backtohome:hover{
+                color: rgb(245, 158, 44);
+                transform: translateX(-3px);
+            }
+    
+            .switchaccount{
+                color: rgb(36, 36, 185);
+                font-size: 15px;
+                font-weight: bold;
+                text-decoration: none;
+                outline: none;
+    
+                .iconswitch{
+                    font-size: 17px;
+                    margin-right: 10px;
+                }
+            }
+
+            .switchaccount:hover{
+                color: rgb(245, 158, 44);
+                transform: translateX(5px);
+            }
+        }
+    }
+
+    .maincontainer{
+        display: flex;        
+        padding: 5px;
+        border: none;
+        border-radius: 5px;    
+        background-color: wheat;
+        margin: 0 10px;
+        height: 100vh;
+        overflow-y: auto;
+        overflow-x: auto;
+
+        .tablabel{
+            font-weight: bold;
+        }
+
+        .previewImg{
+            width: 50%;
+            height: 50%;
+        }
+
+        .selectState{
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            text-indent: 1px;
+            text-overflow: '';
+            border: none;
+            color: black;
+            font-weight: bold;
+        }
+
+        .cancelbtn{
+            border: none;
+            border-radius: 5px;
+            color: white;
+            background-color: rgb(247, 72, 72);
+            padding: 5px;
+        }
+
+        h1{
+            margin-left: 10px;
+            font-size: 40px;
+            color: blueviolet;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .btnexchange{
+            background-color: rgb(58, 58, 247);
+            color: white;            
+        }
+
+        .headerCap{
+            font-weight: bold;
+        }
+
+        .Number{
+            font-weight: bold;
+            font-size: 10px;
+            text-transform: uppercase;
+        }
+
+        .rank{
+            font-weight: bold;
+            font-size: 20px;
+        }
+    }
+}

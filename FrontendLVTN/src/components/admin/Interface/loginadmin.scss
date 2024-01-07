@@ -1,0 +1,73 @@
+.authAdmin{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;    
+    flex-direction: column;
+    background-color: rgb(42, 98, 252);
+    background-size: 100%;
+
+    .authContainer{
+        display: flex;
+        flex-direction: column;
+        padding: 40px;
+        border: none;
+        border-radius: 10px;
+        background-color: white;
+        margin-top: 95px;
+        margin-bottom: 95px;
+
+        h1{
+            font-size: 30px;
+            color: black;
+            margin-bottom: 30px;
+            text-align: center;      
+        }
+    
+        form{
+            display: flex;
+            flex-direction: column;
+            width: 400px;
+            gap: 20px;
+    
+            input{
+                padding: 15px;
+                border: 1px solid rgb(209, 208, 208);
+                border-radius: 30px;
+                font-size: 14px;
+            }
+    
+            button{
+                padding: 15px;
+                border: none;
+                border-radius: 30px;
+                background-color: rgb(42, 98, 252);
+                font-size: 14px;
+                color: white;
+                cursor: pointer;
+                margin-top: 10px;
+            }
+    
+            p{
+                font-size: 12px;
+                color: red;
+                text-align: center;
+            }
+    
+            .backhome{
+                width: 400px;
+                padding: 15px;
+                border: none;
+                border-radius: 30px;
+                background-color: rgb(245, 47, 47);
+                font-size: 14px;
+                color: white;
+                cursor: pointer;
+                margin-top: -10px;
+                margin-bottom: 10px;
+                text-decoration: none;
+                outline: none;
+            }
+        }
+    }
+}

@@ -1,0 +1,22 @@
+.imgOrder{
+    width: 45px;
+    height: 45px;
+    padding: 3px;
+    border: 1px solid rgb(224, 223, 223);
+    border-radius: 5px;
+}
+
+.selectState{    
+    padding: 3px;
+    border: 1px solid rgb(228, 227, 227);
+    border-radius: 5px;
+    outline: none;
+}
+
+.cateCaption h1{          
+    flex: 8;  
+    font-size: 40px;
+    color: blueviolet;
+    font-weight: bold;
+    margin: 0 70px 20px 10px;
+}

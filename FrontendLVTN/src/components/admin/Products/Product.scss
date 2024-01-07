@@ -1,0 +1,152 @@
+.listPro{
+    padding: 10px;
+    .cateCaption{
+        display: flex;
+        flex-direction: row;
+
+        h1{          
+            flex: 8;  
+            font-size: 40px;
+            color: blueviolet;
+            font-weight: bold;
+            margin: 0 70px 20px 10px;
+        }
+
+        .buttonAddCate{
+            flex: 1;
+            margin: 10px 30px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;                    
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            align-content: center;
+            background-color: rgb(32, 128, 32);
+            color: aliceblue;
+            font-style: normal;
+        }
+    }
+    .headerCate{
+        font-weight: bold;
+    }
+
+    .proHot{
+        margin-left: 10px;
+        border: none;
+        border-radius: 5px;
+        padding: 2px 7px;
+        background-color: rgb(247, 72, 72);
+        color: aliceblue;
+        font-weight: bold;
+        font-size: 12px;
+    }
+
+    .proNone{
+        margin-left: 10px;
+        border: none;
+        border-radius: 5px;
+        padding: 2px 2.5px;
+        background-color: rgb(158, 158, 158);
+        color: aliceblue;
+        font-weight: bold;
+        font-size: 12px
+    }
+
+    .editCate{        
+        border: none;
+        border-radius: 5px;
+        padding: 3px;
+        background-color: rgb(42, 42, 250);
+
+        .linkedit{
+            color: aliceblue;
+        }
+    }
+    .deleteCate{
+        margin-left: 10px;
+        border: none;
+        border-radius: 5px;
+        padding: 3px;
+        background-color: rgb(247, 72, 72);
+        color: aliceblue;
+    }
+
+    .toolbar{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .btn-addpro{
+            margin: 10px 0 10px 10px;                 
+            border: none;
+            border-radius: 5px;
+            padding: 3px;
+            background-color: rgb(67, 192, 94);
+            
+            .linkadd{
+                color: aliceblue;
+            }
+        }
+
+        .btn-addTrade{
+            margin: 10px 0 10px 10px;                 
+            border: none;
+            border-radius: 5px;
+            padding: 3px;
+            background-color: rgb(67, 192, 94);
+            color: aliceblue;
+        }
+
+        .btn-deletepro{
+            margin: 10px 0 10px 10px;                 
+            border: none;
+            border-radius: 5px;
+            padding: 3px;
+            background-color: rgb(235, 63, 63);
+            color: aliceblue;
+        }
+    }
+}
+
+.addPro{
+    display: flex;
+    justify-content: center;    
+    flex-direction: column;
+    margin-top: 10px;    
+
+    h1{
+        margin-left: 10px;
+        font-size: 40px;
+        color: blueviolet;
+        margin-bottom: -10px;
+        font-weight: bold;
+    }
+
+    form{
+        .btnUpdate{
+            button{
+                width: 100px;
+                padding: 8px;
+                border: none;
+                border-radius: 5px;
+                background-color: rgb(43, 141, 43);
+                font-size: 17px;
+                color: white;
+                cursor: pointer;
+            }
+
+            .back{
+                margin-right: 10px;
+                width: 100px;
+                padding: 8px;
+                border: none;
+                border-radius: 5px;
+                background-color: red;
+                font-size: 17px;
+                color: white;
+                cursor: pointer;
+            }
+        }
+    }
+}
